@@ -1,0 +1,1 @@
+# my_elegant_node_mongodb
