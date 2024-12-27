@@ -13,10 +13,8 @@ app.use(bodyParser.json());
 
 // Database connection
 connectDB();
-
 // Routes
 app.use('/api/applicant', applicantRoutes);
-
 
 // Register company routes
 app.use('/api/company', companyRoutes);
