@@ -5,6 +5,7 @@ const connectDB = require('./db/db');
 const applicantRoutes = require('./routes/applicant');
 const companyRoutes = require('./routes/company');
 const jobPostRoutes = require('./routes/jobPostRoutes');
+const profileRoutes = require('./routes/profile');
 const cors=require("cors")
 
 
@@ -25,6 +26,9 @@ app.use('/api/company', companyRoutes);
 
 
 app.use('/api/job-posts', jobPostRoutes);
+
+
+app.use('/api/profile', profileRoutes);
 
 
 const PORT = process.env.PORT || 5000;
