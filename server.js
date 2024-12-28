@@ -6,6 +6,7 @@ const applicantRoutes = require('./routes/applicant');
 const companyRoutes = require('./routes/company');
 const jobPostRoutes = require('./routes/jobPostRoutes');
 const profileRoutes = require('./routes/profile');
+const jobRoutes = require('./routes/job');
 const cors=require("cors")
 
 
@@ -29,7 +30,7 @@ app.use('/api/job-posts', jobPostRoutes);
 
 
 app.use('/api/profile', profileRoutes);
-
+app.use('/api/job', jobRoutes);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
